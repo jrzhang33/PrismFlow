@@ -17,13 +17,12 @@ PrismFlow: Residual Dynamics for Flow Matching in Time-Series Generation
 <p align="center">
   <img src="./assets/overview.png" width="100%" alt="PrismFlow Overview">
 </p>
-
-**PrismFlow** is a flow-matching framework for time-series generation. Standard FM often relies on a single global vector-field estimator, which can average incompatible local velocities and wash out high-frequency modes. PrismFlow keeps the global transport path and adds residual dynamical corrections through two components:
+**PrismFlow** is a flow-matching framework for time-series generation. Standard FM often relies on a single global vector-field estimator, which can average incompatible local velocities and wash out high-frequency modes. PrismFlow preserves the global transport path while introducing residual dynamical corrections through two components:
 
 - **Koopman Experts** — a bank of latent linear experts that map nonlinear temporal evolution into a Koopman space and decode mode-specific residual velocities.
-- **Confidence-aware WTA Routing** — a time-aware router picks one expert per flow state; only the winner receives the specialization update, while gradients to the others are masked.
+- **Confidence-aware WTA Routing** — a time-aware router selects one expert for each flow state. Only the winning expert receives the specialization update, while gradients to the remaining experts are masked.
 
-During sampling, the selected expert adds a residual correction to the global transport field. Across Sines, Stocks, ETTh, MuJoCo, Energy, and fMRI, PrismFlow improves Context-FID by 15.6% and Discriminative Score by 38.6% over strong FM / diffusion baselines, and remains effective for forecasting and imputation.
+During sampling, the selected expert adds a residual correction to the global transport field.
 
 ---
 
