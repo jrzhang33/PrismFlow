@@ -133,5 +133,4 @@ Metrics are written to `results/<dataset>/metrics.json`:
 We thank [Diffusion-TS](https://github.com/Y-debug-sys/Diffusion-TS) for the codebase and datasets used in our experiments.
 
 # Contact
-
-If you have any questions or suggestions, please contact us at [junruzhang@zju.edu.cn](mailto:junruzhang@zju.edu.cn).
+ [junruzhang@zju.edu.cn](mailto:junruzhang@zju.edu.cn).
