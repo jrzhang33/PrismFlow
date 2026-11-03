@@ -17,6 +17,7 @@ PrismFlow: Residual Dynamics for Flow Matching in Time-Series Generation
 <p align="center">
   <img src="./assets/overview.png" width="100%" alt="PrismFlow Overview">
 </p>
+
 **PrismFlow** is a flow-matching framework for time-series generation. Standard FM often relies on a single global vector-field estimator, which can average incompatible local velocities and wash out high-frequency modes. PrismFlow preserves the global transport path while introducing residual dynamical corrections through two components:
 
 - **Koopman Experts** — a bank of latent linear experts that map nonlinear temporal evolution into a Koopman space and decode mode-specific residual velocities.
