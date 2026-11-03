@@ -36,7 +36,7 @@ During sampling, the selected expert adds a residual correction to the global tr
 - [Evaluation](#evaluation)
 - [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
-
+- [Contact](#contact)
 ---
 
 # Installation
