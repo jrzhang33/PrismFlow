@@ -1,0 +1,18 @@
+dataset: energy
+model:
+  params:
+    n_layer_enc:        4
+    n_layer_dec:        4
+    d_model:            96
+    n_experts:          4
+    dz:                 32
+    timesteps:          1000
+    sampling_timesteps: 250
+    lambda_wta:         1.0
+    lambda_bal:         0.1
+    wta_beta:           0.01
+    residual_scale:     1.0
+dataloader:
+  batch_size:           128
+solver:
+  max_epochs:           25000

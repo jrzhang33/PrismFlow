@@ -1,0 +1,18 @@
+dataset: stocks
+model:
+  params:
+    n_layer_enc:        3
+    n_layer_dec:        3
+    d_model:            64
+    n_experts:          4
+    dz:                 8
+    timesteps:          1000
+    sampling_timesteps: 250
+    lambda_wta:         1.0
+    lambda_bal:         0.1
+    wta_beta:           0.01
+    residual_scale:     1.0
+dataloader:
+  batch_size:           256
+solver:
+  max_epochs:           10000

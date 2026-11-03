@@ -1,0 +1,18 @@
+dataset: sines
+model:
+  params:
+    n_layer_enc:        2
+    n_layer_dec:        2
+    d_model:            64
+    n_experts:          4
+    dz:                 32
+    timesteps:          500
+    sampling_timesteps: 50
+    lambda_wta:         0.01
+    lambda_bal:         0.001
+    wta_beta:           0.01
+    residual_scale:     0.1
+dataloader:
+  batch_size:           64
+solver:
+  max_epochs:           10000

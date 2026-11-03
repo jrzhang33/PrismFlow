@@ -1,0 +1,18 @@
+dataset: etth
+model:
+  params:
+    n_layer_enc:        3
+    n_layer_dec:        2
+    d_model:            64
+    n_experts:          4
+    dz:                 32
+    timesteps:          500
+    sampling_timesteps: 200
+    lambda_wta:         1.0
+    lambda_bal:         0.1
+    wta_beta:           0.01
+    residual_scale:     0.3
+dataloader:
+  batch_size:           128
+solver:
+  max_epochs:           18000
